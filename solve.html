@@ -1,0 +1,139 @@
+doctype html>
+<html lang="en">
+  <head>
+    <title>code along</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #212121;">
+        <a class="navbar-brand" href="#">Array work</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="solve.html">Solve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="code.html">Code</a>
+                </li>
+                </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Fluid jumbo heading</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            <p>More info</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="card-columns">
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h2 class="card-title">Join</h2>
+                <p class="card-text">The join() method joins array elements into a string. In this example I have used "*" as a separator between the elements.</p>
+                <p class="card-text">Click the button to display the string after joining the following array;</p>                
+      
+                <h4>["Banana", "Orange", "Apple", "Mango"]</h4>                
+                <!-- <button class="btn btn-dark" onclick="Join()">Try it</button> -->
+                <button class="btn btn-dark" id="btnJoin">Try it</button>
+                <hr>
+                <h3><p id="outputCard1"></p></h3>                     
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Reverse</h4>
+                <p class="card-text">We can easily reverse an Array including an array of characters (a.k.a A String)</p>
+                <h4>["Banana", "Orange", "Apple", "Mango"]</h4>
+                <button class="btn btn-dark" onclick="Reverse()">Click to reverse</button>                   
+                <!-- <button class="btn btn-dark" id="btnReverse">Click to reverse</button> -->
+                <hr>
+                <h3><p id="outputCard2"></p></h3>              
+            </div>
+        </div>
+    
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Split Reverse Join</h4>
+                <p class="card-text">We can also easily reverse a String (a.k.a. Palindrome)</p>
+                <h4>Hello</h4>
+                <button class="btn btn-dark" onclick="ReverseUsingSplitAndJoin()">Click to reverse</button>                   
+                <!-- <button class="btn btn-dark" id="btnReverse">Click to reverse</button> -->
+                <hr>
+                <h3><p id="outputCard3"></p></h3>              
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Sorting an Array</h4>
+                <p class="card-text">We can sort an array either alphabetically (by default) or using a custom function</p>
+                <h4>["Banana", "Orange", "Apple", "Mango"]</h4>
+                <button class="btn btn-dark" onclick="Sort()">Click to sort</button>                   
+                <!-- <button class="btn btn-dark" id="btnReverse">Click to reverse</button> -->
+                <hr>
+                <h3><p id="outputCard4"></p></h3>              
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Sorting a numric Array</h4>
+                <p class="card-text">We can also sort a numeric array in either ascending or descending order</p>
+                <h4>[40, 100, 1, 5, 25, 10]</h4>
+                <button class="btn btn-dark" id="btnSort">Click to sort ascending</button>                   
+                <button class="btn btn-dark" id="btnSortDesc">Click to sort descending</button>                   
+          
+                <!-- <button class="btn btn-dark" id="btnReverse">Click to reverse</button> -->
+                <hr>
+                <h3><p id="outputCard5"></p></h3>              
+                <h3><p id="outputCard6"></p></h3>              
+            </div>
+        </div>
+
+    <div class="card">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Switch versus If/Else If/Else</h4>
+            <p class="card-text">As an example I will use JS's Date().getDay() method to illustrate the switch statement</p>
+            <button class="btn btn-dark" id="btnSwitch">Switch on the DOW</button>                   
+            <!-- <button class="btn btn-dark" id="btnReverse">Click to reverse</button> -->
+            <hr>
+            <h3><p id="outputCard7"></p></h3>              
+        </div>
+    </div>
+    
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
