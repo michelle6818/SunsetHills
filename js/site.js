@@ -3,30 +3,34 @@ let arrayBld = [3, 2, 4, 7, 6, 9];
 
 // set up button 
 document.getElementById("clickBld").addEventListener("click", sunSet);
-document.getElementById("clickBld2").addEventListener("click", sunSet2);
-document.getElementById("clear").addEventListener("click", Clear);
+
 
 function sunSet(){
-    let newArray = [];
-    let count = 1;
-    let max = arrayBld[0];
-    newArray.push(max);
 
-    for (let i = 0; i < arrayBld.length; i++) {
+    let tallest = arrayBld[0];
+    let inSunAmt = 1;
+    let inSunBld = [];
+    inSunBld.push(tallest);
 
-        if (arrayBld[i] > max) {
-        count++;
-        newArray.push(arrayBld[i]);
-        max = arrayBld[i];
+    for (let loop = 1; loop < arrayBld.length; loop++) {
+
+        if (arrayBld[loop] > tallest) {
+        inSunAmt++;
+        inSunBld.push(arrayBld[loop]);
+        tallest = arrayBld[loop];
         }
     }
 
-    document.getElementById("result").innerHTML = `${count}`;
-    document.getElementById("result2").innerHTML = `${newArray.join(', ')}`;
+    document.getElementById("result").innerHTML = `${inSunAmt}`;
+    document.getElementById("result2").innerHTML = `${inSunBld.join(', ')}`;
 }
 
 // extra credit
-//  Get user's input
+//  Add buttons and Get user's input
+
+document.getElementById("clickBld2").addEventListener("click", sunSet2);
+document.getElementById("clear").addEventListener("click", Clear);
+
 function sunSet2(){
     let bld1 = parseInt(document.getElementById("input1").value);
     let bld2 = parseInt(document.getElementById("input2").value);
@@ -36,7 +40,9 @@ function sunSet2(){
     let bld6 = parseInt(document.getElementById("input6").value);
 
     // turn user data into an array
-
+    // let allArrayar = parseInt(document.getElementById("input1","input2","input3","input4","input5","input6"))
+    // let allBld = [bld1, bld2, bld3, bld4, bld5, bld6];
+    // let allBld = new Array()
     let arrayBld2 = new Array();
     arrayBld2.push(bld1);
     arrayBld2.push(bld2);
@@ -73,23 +79,3 @@ function Clear(){
     document.getElementById("result3").innerText = "";
 
 }
-// function SortAscending(){
-//     document.getElementById("result").innerText = 
-//         arrayBld.sort(function(a, b){return a - b}).join(" < ");
-// }
-
-
-
-
-
-// function Join()
-// {
-//     let fruits = ["Banana", "Orange", "Apple", "Mango"];
-//     // let fruits = new Array();
-//     // fruits.push("Banana");
-//     // fruits.push("Orange");
-//     // fruits.push("Apple");
-//     // fruits.push("Mango");
-
-//     // document.getElementById("outputCard1").innerHTML = fruits.join(" --> ");
-//     document.getElementById("outputCard1").innerHTML = fruits;
