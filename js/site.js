@@ -1,12 +1,12 @@
-// set my array
-let arrayBld = [3, 2, 4, 7, 6, 9];
+// set my array in function
+
 
 // set up button 
 document.getElementById("clickBld").addEventListener("click", sunSet);
 
 
 function sunSet(){
-
+    let arrayBld = [3, 2, 4, 7, 6, 9];
     let tallest = arrayBld[0];
     let inSunAmt = 1;
     let inSunBld = [];
@@ -20,7 +20,7 @@ function sunSet(){
         tallest = arrayBld[loop];
         }
     }
-
+    // document.getElementById("result").innerHTML = `inSunAmt + buildings in the sun.`
     document.getElementById("result").innerHTML = `${inSunAmt}`;
     document.getElementById("result2").innerHTML = `${inSunBld.join(', ')}`;
 }
