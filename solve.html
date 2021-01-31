@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="css/custom.css">  
+</head>
   <body>
     
     <!-- Nav section -->
@@ -39,34 +40,36 @@
 
 
     <!-- JumboTron section -->
-    
-        <div class="container text-center">
+    <header class="jumbotron jumbotron-fluid text-center">
+        <div class="container d-flex flex-column align-items-center aos-init aos-animate"
+        data-aos= "zoom-in"data-aos-delay= "100">
             <h1 class="display-3">Sunset Hills</h1>
+            <br>
             <p class="lead">Which buildings will see the sunset?</p>
-            <hr class="my-2">
-            <!-- <p>More info</p> -->
-        </div>
-
-    <div class="card-columns offset-xlg">
+        <hr class="my-2">
+    </div>
+</header>
+    <div class="card-columns offset-xlg text-center">
         <div class="card offset-lg-5">
-            <!-- <img class="card-img-top" src="holder.js/100x180/" alt=""> -->
-            <div class="card-body">
-                <h2 class="card-title">Find out which buildings will enjoy the sunset</h2>
-                <p class="card-text">Building stories are: 3, 2, 4, 7, 6, 9</p>
-                <button class="btn btn-dark" id="clickBld">Found out</button>
+            <div class="card-body" style="background-color: #002f4e;">
+                <h2 class="card-title white">Find out which buildings will enjoy the sunset!</h2>
+                <br>
+                <h4 class="card-text white">The building stories and order are: <br>
+                     3, 2, 4, 7, 6, 9</h4>
+                <br>
+                <button class="btn btn-outline-info" id="clickBld">Found out</button>
                 <hr>
-                <h6>How many buildings will see the sunset: </h6>
-                <p id="result"></p> 
-                <h6>Those buildings are:</h6>
-                <p id="result2"></p>                   
+                <h5 class="white">How many buildings will see the sunset: </h5>
+                <p class="result" id="result"></p> 
+                <h5 class="white">Those buildings are:</h5>
+                <p class="result" id="result2"></p>                   
             </div>
         </div>
         <div class="card offset-lg-7">
-            <img class="card-img-top" src="holder.js/100x180/" alt="">
-            <div class="card-body">
-                <h4 class="card-title">YOU enter the building height and order
-                and we will tell you which will see the sunset!</h4>
-                <p class="card-text">Please enter the heights for six buildings</p>
+            <div class="card-body" style="background-color: #002f4e;">
+                <h3 class="card-title white">YOU enter the building height and order
+                and we will tell you which will see the sunset!</h3>
+                <h4 class="card-text white">Please enter the heights for six buildings:</h4>
                 <p id="arrayBld2" type="number"></p>
                                   
                 <!-- <button class="btn btn-dark" id="btnReverse">Click to reverse</button> -->
@@ -76,10 +79,11 @@
                 <input type="text" class="form-control" placeholder="Fourth Building" id="input4">
                 <input type="text" class="form-control" placeholder="Fifth Building" id="input5">
                 <input type="text" class="form-control" placeholder="Six Building" id="input6">
-                <h6>The buildings that will see the sunset:</h6>
-                    <p id="result3"></p>
-                <button class="btn btn-dark" id="clickBld2">Click</button> 
-                <button class="btn btn-success" id="clear">Clear</button>             
+                <br>
+                <h5 class="white">The buildings that will see the sunset:</h5>
+                    <p class="result" id="result3"></p>
+                <button class="btn btn-outline-info" id="clickBld2">Click</button> 
+                <button class="btn btn-outline-secondary" id="clear">Clear</button>             
             </div>
         </div>
     
